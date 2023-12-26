@@ -1,0 +1,9 @@
+:root {
+  --font-body-small: 12px;
+  --font-body: 14px;
+  --font-title-small: 16px;
+  --font-title: 18px;
+  --font-title-main: 20px;
+
+  font-size: var(--font-body);
+}
