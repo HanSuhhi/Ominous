@@ -1,5 +1,4 @@
 body {
-  --header-block-height: 2.5rem;
   --moment: 0.45s;
   --ani-time: var(--moment);
 
@@ -22,33 +21,9 @@ body {
   --cursor-text-active: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmMGMyMzkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTcgMjJoLTFhNCA0IDAgMCAxLTQtNFY2YTQgNCAwIDAgMSA0LTRoMU03IDIyaDFhNCA0IDAgMCAwIDQtNHYtMU03IDJoMWE0IDQgMCAwIDEgNCA0djEiLz48L3N2Zz4K"), text;
 
   margin: 0;
+  padding: 0;
   font-family: v-sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.6;
-}
-
-#app {
+  box-sizing: border-box;
   user-select: none;
-
-  width: 100vw;
-  height: 100vh;
-
-  color: var(--font-color);
-
-  background-color: var(--bg-color-deep-2);
-}
-
-#app::before {
-  pointer-events: none;
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  /* background: radial-gradient(var(--bg-color-bright-2), transparent 40%); */
-  background-size: 4px 4px;
-}
-
-*::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  line-height: 0;
 }
